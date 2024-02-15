@@ -193,7 +193,7 @@ def event(intent, request_json):
         case "Start the chat":
             if IsOOH():
                 contentType = "TEXT"
-                text = """This live chat is now closed and your message won't be delivered. The live chat is available during UK Office Hours (09:00 to 11:00 and 14:00 to 17:00), Monday - Friday exlcuding Bank Holidays.
+                text = """This live chat is now closed and your message won't be delivered. The live chat is available during UK Office Hours (09:00 to 11:00 and 14:00 to 17:00), Monday - Friday excluding Bank Holidays.
 If you’re currently abroad and require emergency assistance please call +44 (0) 2038 599 317.
 If you would like to submit a new claim, the fastest and easiest way to claim is online on our website, puffin.uk.axa.travel/claim/claim_home. We will guide you through the process step by step."""
                 payload1 = create_text(request_json, contentType, text)
@@ -611,7 +611,7 @@ We understand the importance of offering support during challenging times. If yo
         case _:
             if IsOOH():
                 contentType = "TEXT"
-                text = """This live chat is now closed and your message won't be delivered. The live chat is available during UK Office Hours (09:00 to 11:00 and 14:00 to 17:00), Monday - Friday exlcuding Bank Holidays.
+                text = """This live chat is now closed and your message won't be delivered. The live chat is available during UK Office Hours (09:00 to 11:00 and 14:00 to 17:00), Monday - Friday excluding Bank Holidays.
 If you’re currently abroad and require emergency assistance please call +44 (0) 2038 599 317.
 If you would like to submit a new claim, the fastest and easiest way to claim is online on our website, puffin.uk.axa.travel/claim/claim_home. We will guide you through the process step by step."""
                 payload1 = create_text(request_json, contentType, text)
